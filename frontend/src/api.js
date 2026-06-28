@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// Get the API URL from environment variables or use a default for local development
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/tasks';
+const API_URL = 'https://internshala-task-tracker.onrender.com/api/tasks';
 
 export const fetchTasks = async (status, sortBy) => {
   let url = API_URL;
